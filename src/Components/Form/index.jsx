@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import * as S from "./styles";
 import Bg from '../../img/Background-Header.png';
+import Box from '../../img/box.png';
 import Swal from 'sweetalert2/dist/sweetalert2.all.js';
 
 
@@ -72,7 +73,11 @@ export default function Form() {
                     <S.Formulario>
                         <S.Header>
                             <SpanHeader pre="Formulário" text="para compra de" pos="Pacote de adesivos" />
+                            <div>
+                                <img src={Box} width={86} />
+                            </div>
                             <BgHeader />
+
                         </S.Header>
                         <S.ContainerFormulario>
                             <Title titulo="Quais adesivos:" />
@@ -163,36 +168,35 @@ export const SpanHeader = ({ pre, text, pos }) => (
 // modais/alertas
 export const ModalError = () => {
     Swal.fire({
-      title: "Problemas na submissão, aguarde um momento.",
-      icon: "error",
-      position: "top-right",
-      showConfirmButton: false,
-      toast: true,
-      timer: 3000,
-      timerProgressBar: true,
-      customClass: {
-        popup: "my-toast",
-        icon: "icon-center",
-        title: "left-gap",
-        content: "left-gap",
-      },
+        title: "Problemas na submissão, aguarde um momento.",
+        icon: "error",
+        position: "top-right",
+        showConfirmButton: false,
+        toast: true,
+        timer: 3000,
+        timerProgressBar: true,
+        customClass: {
+            popup: "my-toast",
+            icon: "icon-center",
+            title: "left-gap",
+            content: "left-gap",
+        },
     });
-  };
-  export const ModalSucesso = () => {
+};
+export const ModalSucesso = () => {
     Swal.fire({
-      title: "Formulário submetido",
-      icon: "success",
-      position: "top-right",
-      showConfirmButton: false,
-      toast: true,
-      timer: 3000,
-      timerProgressBar: true,
-      customClass: {
-        popup: "my-toast",
-        icon: "icon-center",
-        title: "left-gap",
-        content: "left-gap",
-      },
+        title: "Formulário submetido",
+        icon: "success",
+        position: "top-right",
+        showConfirmButton: false,
+        toast: true,
+        timer: 3000,
+        timerProgressBar: true,
+        customClass: {
+            popup: "my-toast",
+            icon: "icon-center",
+            title: "left-gap",
+            content: "left-gap",
+        },
     });
-  };
-  
+};

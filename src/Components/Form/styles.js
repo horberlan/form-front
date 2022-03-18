@@ -32,6 +32,16 @@ export const Header = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   width: 100%;
+  div{
+      position: relative;
+      z-index:2;
+      right:40%;
+      top:-58px;
+      align-self:flex-end;
+    img{
+        position: absolute;
+    }
+  }
 `
 export const BgHeader = styled.img`
   position: relative;
@@ -70,6 +80,8 @@ export const IputsBox = styled.div`
 export const ContainerSelect = styled.div`
   display: flex;
   flex-direction: row;
+  align-items:center;
+  /* justify-content: center; */
 `
 
 export const ButtonQunat = styled.button`
@@ -87,7 +99,7 @@ export const InputQuant = styled.input`
   background: #dce2e8;
   border-radius: 6px;
   border: 1px solid rgba(0, 0, 0, 0.5);
-  padding: 0px 10px;
+  padding:6px 12px;
   text-align: center;
   &::placeholder {
     text-align: center;
