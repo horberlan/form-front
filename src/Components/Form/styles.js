@@ -36,7 +36,7 @@ export const Header = styled.div`
       position: relative;
       z-index:2;
       right:40%;
-      top:-58px;
+      top:-60px;
       align-self:flex-end;
     img{
         position: absolute;
